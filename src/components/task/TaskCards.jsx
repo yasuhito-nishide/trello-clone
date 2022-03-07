@@ -5,7 +5,7 @@ import { AddTaskCardButton } from './button/AddTaskCardButton'
 export const TaskCards = () => {
   return (
     <div>
-      <TaskCards/>
+      <TaskCard/>
       <AddTaskCardButton/>
     </div>
   )
