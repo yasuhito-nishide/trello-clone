@@ -18,9 +18,18 @@ export const TaskCardTitle = () => {
   }
 
   return (
-    <div onClick = {handleClick}> {
-      isClick ? (<form onSubmit={handleSubmit}><input type="text" onChange={handleChange} onBlur={handleBlur}/></form>) : <h3>{inputCardTitle}</h3>
-      }
+    <div onClick={handleClick} className = "taskCardTitleInputArea"> {
+      isClick ? (<form onSubmit={handleSubmit}>
+        <input 
+        className='taskCardTitleInput'
+        autoFocus 
+        type="text" 
+        onChange={handleChange} 
+        onBlur={handleBlur} 
+        value = {inputCardTitle} 
+        maxLength = "10" />
+      </form>) : <h3>{inputCardTitle}</h3>
+    }
     </div>
   )
 }
