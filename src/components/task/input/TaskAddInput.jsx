@@ -12,13 +12,14 @@ export const TaskAddInput = ({
     setTaskList([
       ...taskList,
       {
+        id: taskList.length,
         text: inputText,
       },
     ]);
     setInputText("");
   };
   const handleChange = (e) => {
-    setInputText(e.target.value);
+    setInputText(e.target.value)
   }
   return (
     <div>
