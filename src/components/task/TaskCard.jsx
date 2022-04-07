@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { TaskCardDeleteButton } from './button/TaskCardDeleteButton'
 import { TaskAddInput } from './input/TaskAddInput'
 import { TaskCardTitle } from './TaskCardTitle'
@@ -11,13 +11,13 @@ export const TaskCard = () => {
     <div className='taskCard'>
       <TaskCardTitle />
       <TaskCardDeleteButton />
-      <TaskAddInput 
-      inputText = {inputText} 
-      setInputText = {setInputText}
-      setTaskList = {setTaskList} 
-      taskList = {taskList}
+      <TaskAddInput
+        inputText={inputText}
+        setInputText={setInputText}
+        setTaskList={setTaskList}
+        taskList={taskList}
       />
-      <Tasks inputText={inputText} taskList={taskList} setTaskList={setTaskList}/>
+      <Tasks inputText={inputText} taskList={taskList} setTaskList={setTaskList} />
     </div>
   )
 }
